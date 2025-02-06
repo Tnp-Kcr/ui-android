@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingBottom="16dp">
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/homeme"
+            android:contentDescription="Back to Home"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="About to Me"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <!-- Profile Image -->
+            <ImageView
+                android:id="@+id/profile_image1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/profile_img"
+                android:contentDescription="Profile Picture"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/circle_background"
+                android:clipToOutline="true"
+                android:elevation="8dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thanapoj Kucharo"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edittext_background"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Hi, you can call nickname me Poj or call me whatever name you want. But be sure to understand each other before doing so HAHA. Oh, and I am a student studying at Rajamangala University of Technology Phra Nakhon, Faculty of Science, Department of Computer Science."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- ตารางแสดงข้อมูลเกรด -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:background="#FFFAFA"
+            android:padding="8dp"
+            android:elevation="4dp">
+
+
+            <!-- แถวหัวตาราง -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/cell_background"
+                    android:textColor="#222222" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semester"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/cell_background"
+                    android:textColor="#222222" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPX"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/cell_background"
+                    android:textColor="#222222" />
+            </TableRow>
+
+            <!-- แถวข้อมูล -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2022"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.76"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2022"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.00"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.27"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.28"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2024"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.90"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2024"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Now"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/cell_background"/>
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:id="@+id/button_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Back to Home"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#000000"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:drawableStart="@drawable/home_emo" />
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Go to Hobbies"
+                android:textColor="#000000"
+                android:backgroundTint="#FFFF"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:drawableStart="@drawable/game_emo" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
